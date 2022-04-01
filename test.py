@@ -11,11 +11,10 @@ import json
 
 def main():
     """ Main entry point of the app """
-    print("Parsing data\n")
 
     # open our file objects
-    rawData = open("weball22.txt", "r")
-    scrapedData = open("scrape.csv", "w")
+    rawData = open("weball22.txt", "r", encoding="utf-8")
+    scrapedData = open("scrape22.csv", "w")
     repCount = 0
     demCount = 0
     othCount = 0

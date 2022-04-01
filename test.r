@@ -1,6 +1,4 @@
-print("Creating Charts", quote = FALSE)
-
-scrapedData <- read.table("scrape.csv")
+scrapedData <- read.table("scrape22.csv")
 
 repCount <- scrapedData[1L,1L]
 demCount <- scrapedData[2L,1L]
@@ -17,7 +15,7 @@ if(repPercent + demPercent + othPercent != 100) {
 
 pieLabels <- c(paste("Republicans: ", toString(repPercent), "%", sep = ""), paste("Democrats: ", toString(demPercent), "%", sep = ""), paste("Other: ", toString(othPercent), "%", sep = ""))
 
-png("scrapedPie.png", width = 2240L, height = 1920L)
+png("scrapedPie22.png", width = 2240L, height = 1920L)
 
 pie(c(repCount, demCount, othCount), labels = pieLabels, col = c("red", "blue", "grey"), main = "Candidate Party Data by Percent", radius = 0.9, cex = 5L, cex.main = 5L)
 
