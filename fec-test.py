@@ -4,7 +4,7 @@ Module Docstring
 """
 
 __author__ = "Jude Shreffler"
-__version__ = "0.0.0"
+__version__ = "prototyping"
 __license__ = "MIT"
 
 import json
